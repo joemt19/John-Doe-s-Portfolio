@@ -1,0 +1,715 @@
+/* --- Colors ---
+principal : #1b263b
+secund : #778da9
+third : #415a77
+text : #e9ecef
+*/
+
+/* FONTS */
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/Roboto/roboto-variablefont_wdthwght-webfont.woff2"), format('woff2');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+}
+body {
+    background-color: #1b263b;
+    color: #e9ecef;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    width: 100%;
+}
+p {
+    text-align: center;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+/* HEARDER AND HIS CHILDS */
+header {
+    margin-bottom: 4vh;
+}
+#welcome {
+    margin: 1.5vh 3vw;
+}
+#welcome a {
+    color: #e9ecef;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+#welcome a:hover {
+    color: #e9ecef;
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 1.4rem;
+}
+#welcome a:focus {
+    outline: none;
+    text-decoration: none;
+    transition: 0.2s;
+}
+#welcome a:active {
+    text-decoration: none;
+    color: #e9ecef;
+}
+#welcome a:visited {
+    text-decoration: none;
+    color: #e9ecef;
+}
+header ul, header li {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    border-top: 0.1em solid #e9ecef;
+    border-bottom: 0.1em solid #e9ecef;
+    background-color: #415a77;
+}
+header a {
+    padding: 2px;
+    color: #1b263b;
+    font-weight: 600;
+    text-decoration: none;
+}
+header a:link {
+    color: #1b263b;
+}
+header a:visited {
+    color: #1b263b;
+}
+header a:focus {
+    outline: none;
+    color: #fff;
+    font-size: 1.25rem;
+    margin: 5px;
+    transition: 0.5s;
+}
+header a:hover {
+    margin: 2px 5px;
+    color: #fff;
+    font-size: 1.25rem;
+    border-radius: 0.3em;
+    transition: 0.5s;
+}
+header a:active {
+    color: #e9ecef;
+    text-decoration: underline;
+}
+/* --- BODY --- FIRST CONTENAIR / PRESENTATION */
+
+.contenair {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 5vh 0;
+}
+.contenair#presentation > div {
+    width: 140px;
+    height: 140px;
+}
+.contenair#presentation > div:hover {
+    width: 145px;
+    height: 145px;
+    transition: 0.2s;
+}
+.contenair#presentation > div img {
+    border-radius: 10rem;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+.contenair#presentation:hover > div img {
+        box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.7);
+    }
+h1 {
+    font-size: 2.8rem;
+    padding: 1vh 1vw;
+}
+h1:hover {
+    font-size: 3rem;
+    transition: 0.2s;
+}
+.contenair#presentation p {
+    font-style: italic;
+}
+.contenair#presentation p:hover {
+    font-size: 1.15rem;
+    transition: 0.2s;
+}
+
+/* SECOND CONTENAIR / ABOUT */
+
+.title-contenair {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 6vh;
+}
+h2 {
+    font-size: 2rem;
+}
+.title-contenair:hover {
+    h2 {
+        font-size: 2.2rem;
+        transition: 0.5s;
+    }
+    .custom-underline {
+        width: 90%;
+        transition: 1s;
+    }
+}
+.custom-underline {
+    width: 70%;
+    border: 1px solid;
+}
+#about p {
+    text-align: center;
+    padding: 0 5vw;
+}
+.contenair#about a {
+    color: #1b263b;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 4vh;
+    width: 122px;
+    padding: 1vh 1vw;
+    padding-bottom: 0;
+    border-radius: 0.6em;
+    background-color: #778da9;
+    height: 40px;
+    text-align: center;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.contenair#about a:link {
+    color: #1b263b;
+}
+.contenair#about a:visited {
+    color: #1b263b;
+}
+.contenair#about a:focus {
+    font-size: 1.2rem;
+    width: 124px;
+    height: 41px; 
+    transition: 0.2s;
+    color: #e9ecef;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.contenair#about a:hover {
+    font-size: 1.3rem;
+    width: 125px;
+    height: 41px;
+    transition: 0.3s;
+    font-size: 1.25rem;
+    border-radius: 0.4em;
+    transition: 0.4s;
+    color: #e9ecef;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.contenair#about a:active {
+    color: #e9ecef;
+    text-decoration: underline;
+}
+.contenair#skills {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+#skills-contenair {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.skill {
+    display: flex;
+    background-color: #778da9;
+    border: 1px solid #1b263b;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 240px;
+    height: 220px;
+    border-radius: 1em;
+    color: #1b263b;
+    padding: 2vh 2vw;
+    margin-bottom: 4vh;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.skill:hover {
+    width: 245px;
+    height: 225px;
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+.skill div {
+    width: 50px;
+    flex: 2.5;
+    width: 90px;
+}
+.skill p {
+    padding: 1vh 1vw;
+    flex: 3;
+    text-align: center;
+}
+progress {
+    margin: 1vh 0;
+    flex: 0.5;
+    width: 120px;
+    height: 2em;
+}
+.contenair#realisation {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.contenair#realisation figure div {
+    margin: 2vh 0;
+    width: 290px;
+    height: 180px;
+}
+.contenair#realisation figure div:hover {
+    width: 295px;
+    height: 175px;
+    transition: 0.3s;
+}
+figure {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+figure p a {
+    background: 
+        url(../assets/images/icons8-external-link-26.png)
+        no-repeat
+        right;
+    padding-right: 30px;
+    color: #778da9;
+    font-weight: 500;
+    text-decoration: none;
+}
+figure p a:link {
+    color: #778da9;
+}
+figure p a:visited {
+    color: blueviolet;  
+}
+figure p a:focus {
+    font-size: 1.15rem; 
+    transition: 0.2s;
+    color: #fff;
+    text-decoration: underline;
+}
+figure p a:hover {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+figure p a:active {
+    color: #e9ecef;
+    text-decoration: underline;
+}
+#socials {
+    margin: 3vh 0vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1vw;
+    place-items: center;
+}
+#socials div {
+    width: 50px;
+    height: 50px;
+    margin: 2vh 2vw;
+}
+#socials div a img {
+    border: 0.1em solid #1b263b;
+}
+#socials div a img:hover {
+    transition: 0.4s;
+    width: 55px;
+    height: 55px;
+}
+#socials div:nth-child(4) a img {
+    border-radius: 0.3em;
+}
+form {
+    margin: 2vh 0;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #778da9;
+    border:#1b263b;
+    padding: 5vh 3vw;
+    color: #1b263b;
+    border-radius: 0.8em;
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.6);
+}
+form:hover {
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.8);
+}
+label {
+    padding: 3%;
+}
+input {
+    border-radius: 0.5em;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight: 500;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+input:hover {
+    cursor: text;
+    border: 2px solid #1b263b;
+    transition: 0.2s;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+textarea {
+    height: 80px;
+    padding: 3%;
+    border-radius: 0.3em;
+    font-family: sans-serif;
+    font-weight: 500;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+textarea:hover {
+    cursor: text;
+    border: 2px solid #1b263b;
+    transition: 0.2s;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4);
+}
+form button {
+    height: 40px;
+    width: 122px;
+    border-radius: 0.6em;
+    padding: 1vh 1vw;
+    background-color: #1b263b;
+    color: #e9ecef;
+    margin: auto;
+    margin-top: 3vh;
+}
+form button:hover {
+    width: 124px;
+    height: 42px;
+    cursor: pointer;
+    border: 2px solid #e9ecef;
+    transition: 0.3s;
+}
+footer {
+    background-color: #415a77;
+    padding: 1vh 0;
+}
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+footer p a:link {
+    color: #fff;
+}
+footer p a:visited {
+    color: #fff;  
+}
+footer p a:focus {
+    font-size: 1.15rem;
+    transition: 0.2s;
+    color: #fff;
+    text-decoration: none;
+    outline: auto #1b263b;
+    padding: 0 2vw;
+}
+footer p a:hover {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+footer p a:active {
+    color: #e9ecef;
+    text-decoration: underline;
+}
+/* MEDIAS */
+
+/* Phone landscape */
+@media screen and 
+(min-width: 576px) {s
+    #socials {
+        margin: 3vh 1vw;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2vw;
+        place-items: center;
+    }
+    #skills-contenair {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10vw 0;
+        place-items: center;
+    }
+    .skill {
+        width: 240px;
+        height: 220px;
+        border-radius: 1em;
+        color: #1b263b;
+        padding: 1vh 1vw;
+        margin: 0%;
+    }
+    .contenair#realisation figure div {
+        margin: 2vh 0;
+        width: 320px;
+        height: 210px;
+    }
+    .contenair#realisation figure div:hover {
+        width: 335px;
+        height: 215px;
+        transition: 0.3s;
+    }
+}
+/* Tablets */
+@media screen and 
+(min-width: 768px) {
+    .contenair#realisation figure div {
+        margin: 2vw 0;
+        width: 450px;
+        height: 250px;
+    }
+    .contenair#realisation figure div:hover {
+        width: 455px;
+        height: 255px;
+        transition: 0.3s;
+    }
+    .contenair#presentation > div {
+        width: 180px;
+        height: 180px;
+    }
+    .contenair#presentation > div:hover {
+        width: 185px;
+        height: 185px;
+        transition: 0.2s;
+    }
+}
+/* Little PC */
+@media screen and 
+(min-width: 992px) {
+    header {
+        margin: 2vh 3.5vw;
+        margin-bottom: 4vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    nav {
+        margin: 2vh 1vw;
+        font-size: 1.3rem;
+        margin-right: 0.1vw;
+    };
+    #welcome a {
+        color: #e9ecef;
+        text-decoration: none;
+    }
+    #welcome a:hover {
+        color: #e9ecef;
+        text-decoration: none;
+        transition: 0s;
+        font-size: 1.3rem;
+        padding: 0;
+        margin: 0%;
+    }
+    #welcome a:focus {
+        outline: none;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+    #welcome a:active {
+        text-decoration: none;
+        color: #e9ecef;
+    }
+    #welcome a:visited {
+        text-decoration: none;
+        color: #e9ecef;
+    }
+    header ul {
+        display: flex;
+        list-style-type: none;
+        text-align: center;
+        border: #1b263b;
+    }
+    header li {
+        padding: 0 2vw;
+        background-color: #1b263b;
+        border: #1b263b;
+    }
+    header a {
+        padding: 2px;
+        color: #e9ecef;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    header a:link {
+        color: #e9ecef;
+    }
+    header a:visited {
+        color: #e9ecef;
+    }
+    header a:focus {
+        outline: none;
+        color: #fff;
+        font-size: 1.25rem;
+        margin: 5px;
+        transition: 0.5s;
+    }
+    header a:hover {
+        margin: 2px 5px;
+        color: #fff;
+        font-size: 1.25rem;
+        border-radius: 0.3em;
+        transition: 0.5s;
+    }
+    header a:active {
+        color: #e9ecef;
+        text-decoration: underline;
+    }
+    .contenair#presentation > div {
+        width: 200px;
+        height: 200px;
+    }
+    .contenair#presentation > div:hover {
+        width: 205px;
+        height: 205px;
+        transition: 0.2s;
+    }
+    #skills-contenair {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1vw;
+    }
+    .skill {
+        width: 210px;
+        height: 220px;
+        border-radius: 1em;
+        color: #1b263b;
+        padding: 1vh 1vw;
+        margin: 0%;
+    }
+    .contenair#realisation figure div {
+        margin: 2vh 0;
+        width: 480px;
+        height: 280px;
+    }
+    .contenair#realisation figure div:hover {
+        width: 485px;
+        height: 285px;
+        transition: 0.3s;
+    }
+    .skill:hover {
+        width: 215px;
+        height: 225px;
+        transition: 0.2s;
+    }
+    #socials div {
+        width: 60px;
+        height: 60px;
+        margin: 2vh 2vw;
+    }
+    #socials div a img:hover {
+        transition: 0.4s;
+        width: 65px;
+        height: 65px;
+    }
+}
+/* Big computers */
+@media screen and 
+(min-width: 1200px) {
+    .contenair#presentation > div {
+        width: 240px;
+        height: 240px;
+    }
+    .contenair#presentation > div:hover {
+        width: 245px;
+        height: 245px;
+        transition: 0.2s;
+    }
+    .skill {
+        width: 230px;
+        height: 220px;
+        border-radius: 1em;
+        color: #1b263b;
+        padding: 1vh 1vw;
+        margin: 0%;
+    }
+    .skill:hover {
+        width: 235px;
+        height: 225px;
+        transition: 0.2s;
+    }
+    .contenair#realisation figure div {
+        margin: 2vh 0;
+        width: 530px;
+        height: 330px;
+    }
+    .contenair#realisation figure div:hover {
+        width: 535px;
+        height: 335px;
+        transition: 0.3s;
+    }
+    #socials div {
+        width: 70px;
+        height: 70px;
+        margin: 2vh 2vw;
+    }
+    #socials div a img:hover {
+        transition: 0.4s;
+        width: 75px;
+        height: 75px;
+    }
+}
+/* Others Verry big devices */
+@media screen and 
+(min-width: 1440px) {
+    * {
+        font-size: 1.3rem;
+    }
+    .contenair#presentation > div {
+        width: 300px;
+        height: 300px;
+    }
+    .contenair#presentation > div:hover {
+        width: 305px;
+        height: 305px;
+        transition: 0.2s;
+    }
+    .skill {
+        width: 280px;
+        height: 300px;
+        border-radius: 1em;
+        color: #1b263b;
+        padding: 1.1vh 1.1vw;
+        margin: 0;
+    }
+    .skill:hover {
+        width: 285px;
+        height: 305px;
+        transition: 0.2s;
+    }
+    .contenair#realisation figure div {
+        margin: 2vh 0;
+        width: 840px;
+        height: 560px;
+    }
+    .contenair#realisation figure div:hover {
+        width: 855px;
+        height: 570px;
+        transition: 0.3s;
+    }
+    #socials div {
+        width: 80px;
+        height: 80px;
+        margin: 2vh 2vw;
+    }
+    #socials div a img:hover {
+        transition: 0.4s;
+        width: 85px;
+        height: 85px;
+    }
+}
