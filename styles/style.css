@@ -151,19 +151,17 @@ h1:hover {
 h2 {
     font-size: 2rem;
 }
-.title-contenair:hover {
-    h2 {
-        font-size: 2.2rem;
-        transition: 0.5s;
-    }
-    .custom-underline {
-        width: 90%;
-        transition: 1s;
-    }
+h2:hover {
+    font-size: 2.2rem;
+    transition: 0.5s;
 }
 .custom-underline {
     width: 70%;
     border: 1px solid;
+}
+.custom-underline:hover {
+    width: 90%;
+    transition: 1s;
 }
 #about p {
     text-align: center;
